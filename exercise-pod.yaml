@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: exercise-pod
+  labels:
+    app: exercise
+spec:
+  containers:
+    - name: exercise
+      image: richardchesterwood/k8s-fleetman-queue
+

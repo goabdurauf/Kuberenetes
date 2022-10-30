@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: exercise-service
+spec:
+  selector:
+    app: exercise
+
+  ports:
+    - name: http
+      port: 8161
+      nodePort: 30010
+
+  type: NodePort
